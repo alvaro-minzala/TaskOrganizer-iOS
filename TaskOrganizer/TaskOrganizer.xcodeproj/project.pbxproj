@@ -49,6 +49,7 @@
 		38294FFE269E28DF00389237 /* TaskOrganizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskOrganizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38295002269E28DF00389237 /* TaskOrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskOrganizerUITests.swift; sourceTree = "<group>"; };
 		38295004269E28DF00389237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38AD9408269EF9E600F3E969 /* TaskOrganizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaskOrganizer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		38294FDE269E28DF00389237 /* TaskOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				38AD9408269EF9E600F3E969 /* TaskOrganizer.entitlements */,
 				38294FDF269E28DF00389237 /* AppDelegate.swift */,
 				38294FE1269E28DF00389237 /* ViewController.swift */,
 				38294FE3269E28DF00389237 /* Main.storyboard */,
@@ -198,6 +200,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = MXXAR535S4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					38294FF2269E28DF00389237 = {
 						CreatedOnToolsVersion = 8.0;
@@ -362,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -406,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -421,6 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MXXAR535S4;
 				INFOPLIST_FILE = TaskOrganizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.alvarominzala.TaskOrganizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,6 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MXXAR535S4;
 				INFOPLIST_FILE = TaskOrganizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.alvarominzala.TaskOrganizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +527,7 @@
 				38295009269E28DF00389237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3829500A269E28DF00389237 /* Build configuration list for PBXNativeTarget "TaskOrganizerTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +536,7 @@
 				3829500C269E28DF00389237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3829500D269E28DF00389237 /* Build configuration list for PBXNativeTarget "TaskOrganizerUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +545,7 @@
 				3829500F269E28DF00389237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
